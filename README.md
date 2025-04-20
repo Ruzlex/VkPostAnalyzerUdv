@@ -42,9 +42,7 @@ cd VkPostAnalyzerUdv
 Запустите PostgreSQL и создайте базу данных `VkPostAnalyzerUdv`.
 
 ### 4. Запуск приложения
-```bash
-dotnet run
-``` 
+Для локального запуска запускайте через ваш IDEA
 
 ### 5. Открытие Swagger UI
 Swagger UI доступен по адресу:
