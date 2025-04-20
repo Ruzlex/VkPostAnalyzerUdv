@@ -33,10 +33,22 @@ cd VkPostAnalyzerUdv
 ```json
 {
   "ConnectionStrings": {
-    "VkPostAnalyzerDb": "Host=localhost;Port=5432;Database=VkPostAnalyzerUdv;Username=your_user;Password=your_password"
+    "DefaultConnection": "Host=localhost;Port=5432;Database=VkPostAnalyzerUdv;Username=your_user;Password=your_password"
   }
 }
 ```
+
+## Создание миграции
+
+```
+dotnet ef migrations add InitialCreate -p Infrastructure -s API
+```
+
+## Применение миграций
+
+```
+dotnet ef database update -p Infrastructure -s API
+``` 
 
 ### 3. Разворачивание базы данных PostgreSQL
 Запустите PostgreSQL и создайте базу данных `VkPostAnalyzerUdv`.
