@@ -38,13 +38,13 @@ cd VkPostAnalyzerUdv
 }
 ```
 
-## Создание миграции
+### Создание миграции
 
 ```
 dotnet ef migrations add InitialCreate -p Infrastructure -s API
 ```
 
-## Применение миграций
+### Применение миграций
 
 ```
 dotnet ef database update -p Infrastructure -s API
